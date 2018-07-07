@@ -21,10 +21,12 @@ body {
 .aside {
     flex: 0 0 100px;
     background: #1d2530;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-between;
+}
+.aside_top {
+    height: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .aside_top a {
     display: flex;
@@ -37,11 +39,13 @@ body {
     background: url("../images/aside_bg.png") no-repeat;
 }
 .aside_bottom {
+    position: fixed;
+    left: 26px;
+    bottom: 20px;
     display: flex;
     width: 48px;
     height: 16px;
     justify-content: space-between;
-    margin: 0 0 20px 26px;
 }
 
 nav {
@@ -49,11 +53,11 @@ nav {
     background: #232c3d;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     font-size: 14px;
 }
 .nav_top_1 {
+    width: 190px;
     height: 255px;
     border-bottom: 1px solid #2a3547;
     box-sizing: border-box;
@@ -82,11 +86,8 @@ nav {
     padding-top: 21px;
 }
 .nav_top dt, .nav_top dd {
-    box-sizing: border-box;
     line-height: 24px;
-    width: 250px;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 190px;
     color: #5b6779;
 }
 .nav_top dt {
@@ -125,7 +126,9 @@ nav a:hover {
 .nav_bottom {
     width: 190px;
     height: 38px;
-    margin-bottom: 23px;
+    position: fixed;
+    left: 130px;
+    bottom: 23px;
     color: #fff;
     font-size: 14px;  
     display: flex;
@@ -175,8 +178,9 @@ nav a:hover {
 .m_top .m_top_name {
     width: 201px;
     height: 50px;
-    margin-right: 31px;
-    position: relative;
+    position: fixed;
+    right: 31px;
+    top: 12px;
 }
 .m_top_name p:nth-child(2) {
     font-size: 16px;
